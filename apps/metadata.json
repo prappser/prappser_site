@@ -6,14 +6,26 @@
         "parameters": [
             {
                 "name": "goalDate",
-                "type": "date",
+                "hidden": false,
                 "defaultValue": "2024-06-20",
+                "type": "date",
+                "validators": [
+                    {
+                        "type": "required"
+                    }
+                ],
                 "description": "Counting down to this date"
             },
             {
                 "name": "goalName",
-                "type": "text",
+                "hidden": false,
                 "defaultValue": "your goal",
+                "type": "text",
+                "validators": [
+                    {
+                        "type": "required"
+                    }
+                ],
                 "description": "Name of your goal"
             }
         ]
@@ -25,8 +37,9 @@
         "parameters": [
             {
                 "name": "content",
-                "type": "text",
+                "hidden": true,
                 "defaultValue": "",
+                "type": "text",
                 "description": "Notepad content"
             }
         ]

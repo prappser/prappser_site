@@ -5,8 +5,9 @@
     "parameters": [
         {
             "name": "content",
-            "type": "text",
+            "hidden": true,
             "defaultValue": "",
+            "type": "text",
             "description": "Notepad content"
         }
     ]
