@@ -5,14 +5,30 @@
     "parameters": [
         {
             "name": "goalDate",
-            "type": "date",
-            "defaultValue": "2024-06-20",
+            "hidden": false,
+            "value": {
+                "default": "2024-06-20",
+                "type": "date",
+                "validators": [
+                    {
+                        "type": "required"
+                    }
+                ]
+            },
             "description": "Counting down to this date"
         },
         {
             "name": "goalName",
-            "type": "text",
-            "defaultValue": "your goal",
+            "hidden": false,
+            "value": {
+                "default": "your goal",
+                "type": "text",
+                "validators": [
+                    {
+                        "type": "required"
+                    }
+                ]
+            },
             "description": "Name of your goal"
         }
     ]
